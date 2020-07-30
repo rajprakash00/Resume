@@ -7,6 +7,6 @@ cd $build
 [ -f $resume.pdf ] && exit 1 || echo "continue building pdf"
 
 
-xelatex -interaction=nonstopmode $resume.tex
+pdflatex $resume.tex
 
 [ -f $resume.pdf ] && exit 0 || exit 1
