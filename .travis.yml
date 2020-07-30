@@ -11,14 +11,12 @@ before_install:
 script:
   - mkdir build
   - xelatex -interaction=nonstopmode -output-directory build resume.tex
-  - convert -density 300 -background white -alpha remove build/resume.pdf[0] resume.png
 
 deploy:
   provider: releases
   edge: true
   file:
     - build/resume.pdf
-    - resume.png
   skip-cleanup: true
   on:
     tags: true
