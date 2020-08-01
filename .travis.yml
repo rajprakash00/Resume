@@ -6,10 +6,10 @@ env:
     secure: IfBxeO35tRkUtXMVkIfKXCpO1XN3462SIRbfvm9/OoCkFCQyANvgnALmzBCkUdvfogI2GJ56KBVMiTvK41z7Tunr/mck8ZrWxbfhYUvL9k8uNvJOivTNo5avmI3hj+/26nQZ5P+DflsNOOgWMTMreEtogo1ZHKH38hsUpMOTFx4NyUEZ/Qw+qTE3nElBSHFNh4KQ2SNRLdvtUFU+wwnty6pPBx7sR0Gdrzb+cWmdlLf6EH6QCw0ddmNHLIRwWVwnjOZ0BEr8Y3mIofAKIaGQ75kE1KPjrP6O0Wf+LPNsyqQQ75oopBv9BX1796+6A44UpUcsMRPy59gWOyt6imZtL4kUG6m62jOs2UaVLHa86WzUqp8LCkkv03ebxZxYafk7NBPIKiyJLRvjazW8Nz+dNDmZxH+wkciEXDqIolQ69j3UykUucSFJu9DnWjhR65lyuw4Serm0RNj4EUVJ4dtNff2hkWcMJf4rIIbgsU/2XewRxuPJOY8z8tOuBrKoerKCHOsFatkGsqJYSV+JuiDPkkrDeWfTCgcEJv4DS2AvaRvYgUHPIVIXzatLpOBu4I4x9RURUNmgalXj+YHwGIfbI35v9HsZf/1oy3HL/EVPqAJMX1MjFKW+HtvwXL5A7RGKmsuzkif+Vo2O4O9hxp3eHCxjBvtqji1L2IZ8x7Exok8=
 
 before_install:
-  - sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-fonts-recommended texlive-xetex texlive-latex-recommended texlive-latex-extra texlive-fonts-extra
+  - sudo apt -qq update > /dev/null
+  - sudo apt install -y --no-install-recommends texlive-full > /dev/null
 
 script:
-  - xelatex -interaction=nonstopmode resume.tex
   - xelatex -interaction=nonstopmode resume.tex
 
 deploy:
