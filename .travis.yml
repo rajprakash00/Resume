@@ -1,5 +1,5 @@
 os: linux
-language: bash
+language: minimal
 
 env:
   global:
@@ -9,10 +9,11 @@ before_install:
   - sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-fonts-recommended texlive-xetex texlive-latex-recommended texlive-latex-extra texlive-fonts-extra dvipng
 
 script:
-  - bash test.sh ./ resume
+  - xelatex -interaction=nonstopmode resume.tex
 
 deploy:
   provider: releases
+  file: resume.pdf
   edge: true
   skip-cleanup: true
   on:
