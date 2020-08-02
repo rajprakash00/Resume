@@ -1,6 +1,6 @@
 # :penguin:Resume
 
-[![Build Status](https://travis-ci.org/rajprakash00/Resume.svg?branch=master)](https://travis-ci.org/rajprakash00/Resume)
+[![Build Status](https://travis-ci.org/rajprakash00/Resume.svg?branch=master)](https://travis-ci.org/rajprakash00/Resume) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![download](https://img.shields.io/badge/download-PDF-red)](https://github.com/rajprakash00/Resume/releases/latest/download/resume.pdf)
 
 ### Features :sunglasses:
 
